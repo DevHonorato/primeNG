@@ -20,12 +20,12 @@ export class MenuComponent {
         ],
       },
       {
-        label: 'Configurações',
+        label: 'Outro Component',
         items: [
           {
-            label: 'Categorias',
+            label: 'Vazio',
             icon: 'pi pi-fw pi-tags',
-            routerLink: [''],
+            routerLink: ['/set/vazio'],
           },
         ],
       }

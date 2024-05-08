@@ -15,13 +15,14 @@
 
 .layout-topbar .layout-topbar-logo {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   color: var(--surface-900);
   font-size: 1.5rem;
   font-weight: 500;
-  width: 220px;
+  width: 170px;
   border-radius: var(--borderRadius);
+  padding-left: 1.5rem;
 }
 
 .layout-topbar .layout-topbar-logo img {
@@ -87,6 +88,7 @@
   .layout-topbar .layout-topbar-logo {
       width: auto;
       order: 2;
+      padding-left: 0;
   }
 
   .layout-topbar .layout-menu-button {

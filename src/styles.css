@@ -5,6 +5,10 @@
 @import "./assets/layout/utils.css";
 @import "./assets/layout/typography.css";
 
+@import "primeng/resources/primeng.css";
+@import "../node_modules/primeflex/primeflex.css";
+@import "primeicons/primeicons.css";
+
 :root{
   --scale: 14px;
   --borderRadius: 12px;
