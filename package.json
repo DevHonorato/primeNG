@@ -6,7 +6,9 @@
     "start": "ng serve --open --port 0",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "buildProd": "ng build --configuration production --aot --build-optimizer --vendor-chunk --optimization --base-href=/primeNG",
+    "ghpages": "npx angular-cli-ghpages --dir=dist"
   },
   "private": true,
   "dependencies": {
