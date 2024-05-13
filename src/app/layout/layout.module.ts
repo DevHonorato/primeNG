@@ -12,6 +12,13 @@ import { TopBarComponent } from './components/top-bar/top-bar.component';
 import { SideBarComponent } from './components/side-bar/side-bar.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { MenuitemComponent } from './components/menu-item/menuitem.component';
+import { SidebarModule } from 'primeng/sidebar';
+import { InputSwitchModule } from 'primeng/inputswitch';
+import { ButtonModule } from 'primeng/button';
+import { RadioButtonModule } from 'primeng/radiobutton';
+import { RippleModule } from 'primeng/ripple';
+import { ToastModule } from 'primeng/toast';
+import { TagModule } from 'primeng/tag';
 
 
 @NgModule({
@@ -29,7 +36,14 @@ import { MenuitemComponent } from './components/menu-item/menuitem.component';
         HttpClientModule,
         BrowserAnimationsModule,
         RouterModule,
-        CommonModule
+        CommonModule,
+        SidebarModule,
+        InputSwitchModule,
+        ButtonModule,
+        RadioButtonModule,
+        RippleModule,
+        ToastModule,
+        TagModule
     ],
     exports: [EstruturaComponent]
 })
