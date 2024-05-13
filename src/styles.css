@@ -44,7 +44,6 @@ a {
   min-height: 100vh;
 }
 
-
 .layout-main-container {
   display: flex;
   flex-direction: column;
@@ -74,3 +73,10 @@ a {
   box-shadow: inset var(--focus-ring);
 }
 
+.p-toast {
+  opacity: 1;
+}
+
+#configuracoes .p-sidebar{
+  border-radius: 6px 0px 0px 6px;
+}
