@@ -39,7 +39,7 @@ node -v
 npm -v
 ```
 
-Se as versões forem exibidas, a instalação foi bem-sucedida. Em seguida, na raiz do projeto `\paperoff-agenda`, execute:
+Se as versões forem exibidas, a instalação foi bem-sucedida. Em seguida, na raiz do projeto `\primeNG`, execute:
 
 ```
 npm install
@@ -131,7 +131,7 @@ ng generate module nome-do-modulo
 ### Compilação
 
 Execute `ng build` para compilar o projeto. \
-Os arquivos da compilação serão armazenados no diretório `dist/paperoff-agenda`.
+Os arquivos da compilação serão armazenados no diretório `dist/primeNG`.
 
 #### Script `package.json`
 
