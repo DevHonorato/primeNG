@@ -11,4 +11,6 @@
   </div>
   <!-- <app-config></app-config> -->
   <div class="layout-mask"></div>
+  <div class="menu-overlay" [ngClass]="{'menu-overlay-active': layoutService.state.overlayMenuActive && layoutService.isDesktop()}"></div>
+
 </div>
