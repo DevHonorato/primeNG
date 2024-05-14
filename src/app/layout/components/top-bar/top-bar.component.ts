@@ -52,7 +52,7 @@ export class TopBarComponent implements OnInit {
           this.applyScale();
 
         } catch (error) {
-          console.log("Erro no cache Layout")
+          // console.log("Erro no cache Layout")
           this.changeTheme(this.checkedTheme);
         }
       }else{
@@ -62,7 +62,7 @@ export class TopBarComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log("TopBarComponent")
+    // console.log("TopBarComponent")
   }
 
   @Input() minimal: boolean = false;
@@ -182,7 +182,7 @@ export class TopBarComponent implements OnInit {
   showConfig(){
     this.loading = true;
     try {
-      console.log(this.layoutService.config);
+      // console.log(this.layoutService.config);
       localStorage.setItem("layout", JSON.stringify(this.layoutService.config));
       this.messageService.add({ severity: 'success', summary: 'Sucesso', detail: 'As configurações foram salvas' });
       this.loading = false;
