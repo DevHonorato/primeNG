@@ -53,20 +53,23 @@ export class TopBarComponent implements OnInit {
 
         } catch (error) {
           console.log("Erro no cache Layout")
+          this.changeTheme(this.checkedTheme);
         }
+      }else{
+        this.changeTheme(this.checkedTheme);
       }
 
   }
 
   ngOnInit(): void {
     console.log("TopBarComponent")
-
-
   }
 
   @Input() minimal: boolean = false;
 
-  scales: number[] = [12, 13, 14, 15, 16];
+  scales: number[] = [10, 11, 12, 13, 14, 15, 16, 17, 18];
+  value!: number;
+
 
   get visible(): boolean {
     return this.layoutService.state.configSidebarVisible;
@@ -159,6 +162,16 @@ export class TopBarComponent implements OnInit {
 
   incrementScale() {
     this.scale++;
+    this.applyScale();
+  }
+
+  incrementDecrementScale(){
+    const currentIndex = this.scales.indexOf(this.scale);
+
+    if (currentIndex > 0 && currentIndex < this.scales.length - 1) {
+      this.scale = this.scales[currentIndex];
+    }
+
     this.applyScale();
   }
 

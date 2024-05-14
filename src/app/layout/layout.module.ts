@@ -19,6 +19,7 @@ import { RadioButtonModule } from 'primeng/radiobutton';
 import { RippleModule } from 'primeng/ripple';
 import { ToastModule } from 'primeng/toast';
 import { TagModule } from 'primeng/tag';
+import { SliderModule } from 'primeng/slider';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { TagModule } from 'primeng/tag';
         RadioButtonModule,
         RippleModule,
         ToastModule,
-        TagModule
+        TagModule,
+        SliderModule
     ],
     exports: [EstruturaComponent]
 })
